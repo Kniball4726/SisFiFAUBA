@@ -3,13 +3,18 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
 
 public class Fichada {
     private static final DateTimeFormatter FORMATO_FECHA_HORA =
             DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
-
+    @Column
     private final LocalDateTime fechaHora;
+    @Column
     private final TipoFichada tipo;
+    @Column
     private final EstadoFichada estado;
 
     public Fichada(LocalDateTime fechaHora, TipoFichada tipo, EstadoFichada estado) {

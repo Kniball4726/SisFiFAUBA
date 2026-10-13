@@ -9,11 +9,10 @@ public class Main {
         try (Scanner scanner = new Scanner(System.in)) {
             Map<Integer, Empleado> empleados = new LinkedHashMap<>();
             SistemaFichado sistema = new SistemaFichado();
-            boolean continuar = true;
-
-            while (continuar) {
+            
+            while (true) {
                 mostrarMenu();
-                int opcion = leerEntero(scanner, "Seleccione una opcion: ");
+                int opcion = leerEntero(scanner, "\nSeleccione una opcion: ");
 
                 switch (opcion) {
                     case 1 -> agregarEmpleado(scanner, empleados);
@@ -21,8 +20,8 @@ public class Main {
                     case 3 -> registrarFichada(scanner, empleados, sistema);
                     case 4 -> mostrarHistorial(scanner, empleados);
                     case 0 -> {
-                        continuar = false;
                         System.out.println("Hasta luego.");
+                        System.exit(0);
                     }
                     default -> System.out.println("Opcion no valida. Intente nuevamente.");
                 }
