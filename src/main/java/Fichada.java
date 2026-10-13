@@ -5,12 +5,12 @@ import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-
-
+import javax.persistence.Id;
+@Entity
 public class Fichada {
-    private static final DateTimeFormatter FORMATO_FECHA_HORA =
+    private final DateTimeFormatter FORMATO_FECHA_HORA =
             DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
-    @Column
+    @Id
     private final LocalDateTime fechaHora;
     @Column
     private final TipoFichada tipo;
