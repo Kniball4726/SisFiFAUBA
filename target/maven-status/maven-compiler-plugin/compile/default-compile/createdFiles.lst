@@ -5,6 +5,7 @@ persistencia\EmpleadoJpaController.class
 logica\Empleado.class
 logica\TipoFichada.class
 Main.class
+igu\Ingreso.class
 persistencia\exceptions\NonexistentEntityException.class
 persistencia\exceptions\PreexistingEntityException.class
 logica\EstadoFichada.class
