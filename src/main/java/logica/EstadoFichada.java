@@ -1,3 +1,5 @@
+package logica;
+
 
 
 public enum EstadoFichada {

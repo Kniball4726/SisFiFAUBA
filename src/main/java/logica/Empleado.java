@@ -1,5 +1,8 @@
+package logica;
 
 
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -13,7 +16,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 @Entity
-public class Empleado {
+public class Empleado implements Serializable {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private final int legajo;

@@ -1,11 +1,19 @@
+package logica;
 
+
+import logica.SistemaFichado;
+import logica.Empleado;
 import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
+import persistencia.ControladoraPersistence;
 
 public class Main {
     public static void main(String[] args) {
+        ControladoraPersistence controlPersist = new ControladoraPersistence();
+        
+        
         try (Scanner scanner = new Scanner(System.in)) {
             Map<Integer, Empleado> empleados = new LinkedHashMap<>();
             SistemaFichado sistema = new SistemaFichado();

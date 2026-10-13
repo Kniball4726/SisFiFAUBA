@@ -1,5 +1,9 @@
+package logica;
 
 
+
+import logica.TipoFichada;
+import logica.EstadoFichada;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
