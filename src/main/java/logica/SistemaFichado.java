@@ -2,8 +2,7 @@ package logica;
 
 
 
-import logica.EstadoFichada;
-import logica.Empleado;
+import logica.TipoFichada;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Objects;

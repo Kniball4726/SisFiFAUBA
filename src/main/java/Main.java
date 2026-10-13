@@ -1,17 +1,16 @@
-package logica;
 
 
-import logica.SistemaFichado;
 import logica.Empleado;
+import logica.SistemaFichado;
 import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
-import persistencia.ControladoraPersistence;
+//import persistencia.ControladoraPersistence;
 
 public class Main {
     public static void main(String[] args) {
-        ControladoraPersistence controlPersist = new ControladoraPersistence();
+        //ControladoraPersistence controlPersist = new ControladoraPersistence();
         
         
         try (Scanner scanner = new Scanner(System.in)) {
